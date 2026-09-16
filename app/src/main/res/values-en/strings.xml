@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My First Project</string>
+    <string name="titulo_principal">Hello, world!</string>
+    <string name="subtitulo">My first Android project</string>
+    <string name="descripcion">This application is available in four languages and adapts to any screen size and orientation.</string>
+    <string name="etiqueta_idioma_actual">Current language: %1$s</string>
+    <string name="nombre_idioma">English</string>
+    <string name="titulo_seleccion_idioma">Choose a language</string>
+    <string name="descripcion_fondo">Decorative background with the Android robot</string>
+
+</resources>

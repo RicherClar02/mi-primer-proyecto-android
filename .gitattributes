@@ -1,0 +1,13 @@
+# Normaliza los finales de linea para que el proyecto funcione igual
+# en Windows, macOS y Linux.
+* text=auto
+
+# El script gradlew debe mantener finales de linea Unix y ser ejecutable,
+# si no, no funciona en macOS ni en Linux.
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# Binarios: que git no los toque nunca.
+*.png binary
+*.jar binary
+*.apk binary

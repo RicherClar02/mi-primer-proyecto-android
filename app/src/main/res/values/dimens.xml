@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== Medidas para telefonos (pantalla base) =====
+         Todo esta en dp (espacios) y sp (textos): nunca en px.
+         Asi la interfaz se ve del mismo tamano fisico en cualquier densidad. -->
+
+    <!-- Espacios -->
+    <dimen name="margen_pantalla">16dp</dimen>
+    <dimen name="margen_tarjeta">20dp</dimen>
+    <dimen name="espacio_grande">20dp</dimen>
+    <dimen name="espacio_medio">12dp</dimen>
+    <dimen name="espacio_pequeno">8dp</dimen>
+    <dimen name="radio_tarjeta">20dp</dimen>
+    <dimen name="radio_boton">14dp</dimen>
+    <dimen name="altura_boton">50dp</dimen>
+
+    <!-- Ancho maximo del contenido: en pantallas muy anchas el texto
+         no se estira de lado a lado, se queda legible y centrado. -->
+    <dimen name="ancho_maximo_contenido">560dp</dimen>
+
+    <!-- Tamanos de letra -->
+    <dimen name="texto_titulo_sp">30sp</dimen>
+    <dimen name="texto_subtitulo_sp">17sp</dimen>
+    <dimen name="texto_cuerpo_sp">15sp</dimen>
+    <dimen name="texto_idioma_sp">16sp</dimen>
+    <dimen name="texto_seccion_sp">13sp</dimen>
+    <dimen name="texto_boton_sp">14sp</dimen>
+
+</resources>

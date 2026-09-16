@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== Medidas para tabletas =====
+         sw600dp significa "el lado mas corto de la pantalla mide 600dp o mas".
+         Android elige este archivo solo, sin codigo, y el resto del proyecto
+         no cambia: los mismos nombres, con valores mas grandes. -->
+
+    <dimen name="margen_pantalla">32dp</dimen>
+    <dimen name="margen_tarjeta">32dp</dimen>
+    <dimen name="espacio_grande">28dp</dimen>
+    <dimen name="espacio_medio">18dp</dimen>
+    <dimen name="espacio_pequeno">12dp</dimen>
+    <dimen name="radio_tarjeta">28dp</dimen>
+    <dimen name="radio_boton">18dp</dimen>
+    <dimen name="altura_boton">60dp</dimen>
+
+    <dimen name="ancho_maximo_contenido">720dp</dimen>
+
+    <dimen name="texto_titulo_sp">44sp</dimen>
+    <dimen name="texto_subtitulo_sp">24sp</dimen>
+    <dimen name="texto_cuerpo_sp">19sp</dimen>
+    <dimen name="texto_idioma_sp">21sp</dimen>
+    <dimen name="texto_seccion_sp">16sp</dimen>
+    <dimen name="texto_boton_sp">18sp</dimen>
+
+</resources>

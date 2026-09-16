@@ -1,0 +1,26 @@
+# Archivos de compilacion de Gradle / Android
+*.iml
+.gradle/
+build/
+captures/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.hprof
+.cxx/
+
+# Salidas
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+
+# Sistema
+.DS_Store
+Thumbs.db

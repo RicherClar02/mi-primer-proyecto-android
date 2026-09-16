@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores tomados del propio fondo, para que todo combine -->
+    <color name="azul_cielo">#2196F3</color>
+    <color name="azul_oscuro">#073042</color>
+    <color name="verde_android">#3DDC84</color>
+
+    <!-- Tarjeta blanca semitransparente (E6 = 90 % de opacidad) -->
+    <color name="tarjeta_fondo">#E6FFFFFF</color>
+    <color name="tarjeta_borde">#33FFFFFF</color>
+
+    <!-- Textos -->
+    <color name="texto_titulo">#073042</color>
+    <color name="texto_normal">#37474F</color>
+    <color name="texto_resaltado">#0B6E4F</color>
+    <color name="transparente">#00000000</color>
+
+</resources>

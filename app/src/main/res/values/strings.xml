@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="es">
+
+    <!-- ===== Textos de la interfaz (idioma por defecto: espanol) ===== -->
+    <!-- Nombre de la app tal como se ve en el lanzador -->
+    <string name="app_name">Mi Primer Proyecto</string>
+    <!-- Titulo grande de la pantalla -->
+    <string name="titulo_principal">¡Hola, mundo!</string>
+    <!-- Subtitulo bajo el titulo -->
+    <string name="subtitulo">Mi primer proyecto Android</string>
+    <!-- Explicacion corta de lo que hace la app -->
+    <string name="descripcion">Esta aplicación está disponible en cuatro idiomas y se adapta a cualquier tamaño de pantalla y orientación.</string>
+    <!-- Linea que indica el idioma activo. %1$s se reemplaza por nombre_idioma -->
+    <string name="etiqueta_idioma_actual">Idioma actual: %1$s</string>
+    <!-- Nombre del idioma de ESTE archivo, en su propio idioma -->
+    <string name="nombre_idioma">Español</string>
+    <!-- Encabezado del grupo de botones -->
+    <string name="titulo_seleccion_idioma">Elige un idioma</string>
+    <!-- Descripcion del fondo para lectores de pantalla -->
+    <string name="descripcion_fondo">Fondo decorativo con el robot de Android</string>
+
+    <!-- ===== Etiquetas de los botones de idioma =====
+         Son los nombres de los idiomas escritos en su propia lengua,
+         por eso NO se traducen: se ven igual en las cuatro versiones. -->
+    <string name="boton_espanol" translatable="false">Español</string>
+    <string name="boton_ingles" translatable="false">English</string>
+    <string name="boton_frances" translatable="false">Français</string>
+    <string name="boton_aleman" translatable="false">Deutsch</string>
+
+</resources>

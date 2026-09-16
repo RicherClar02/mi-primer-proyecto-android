@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lista de idiomas que soporta la app.
+     Android la usa para mostrar "Idiomas de la aplicacion" en los ajustes
+     del sistema (Android 13 en adelante). El primero es el predeterminado. -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="es" />
+    <locale android:name="en" />
+    <locale android:name="fr" />
+    <locale android:name="de" />
+</locale-config>

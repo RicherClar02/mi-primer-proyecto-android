@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Robot de Android dibujado como vector: se ve nitido en cualquier
+     densidad de pantalla sin guardar una imagen por cada tamano. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Antenas -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.6"
+        android:strokeLineCap="round"
+        android:pathData="M40,29 L45.5,37.5" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.6"
+        android:strokeLineCap="round"
+        android:pathData="M68,29 L62.5,37.5" />
+
+    <!-- Cabeza (media luna) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,53 A20,20 0 0 1 74,53 Z" />
+
+    <!-- Ojos -->
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M46,45 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" />
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M62,45 m-2.6,0 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0" />
+
+    <!-- Cuerpo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,56 L74,56 L74,76 A4,4 0 0 1 70,80 L38,80 A4,4 0 0 1 34,76 Z" />
+
+    <!-- Brazos -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25.5,59 m0,3.5 a3.5,3.5 0 0 1 7,0 l0,14 a3.5,3.5 0 0 1 -7,0 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M75.5,59 m0,3.5 a3.5,3.5 0 0 1 7,0 l0,14 a3.5,3.5 0 0 1 -7,0 z" />
+
+    <!-- Piernas -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M41,80 l7,0 l0,9 a3.5,3.5 0 0 1 -7,0 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,80 l7,0 l0,9 a3.5,3.5 0 0 1 -7,0 z" />
+
+</vector>

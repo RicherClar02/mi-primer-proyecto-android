@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    PANTALLA HORIZONTAL (apaisado)
-
-    Android elige este archivo solo por estar en la carpeta "layout-land".
-    Son dos columnas: los textos a la izquierda y los botones a la derecha.
-    El centro se deja libre a proposito, porque ahi es donde el nine-patch
-    mantiene fijo al robot de Android.
-
-    Los identificadores de las vistas son los mismos que en la version
-    vertical, por eso MainActivity funciona igual en las dos sin codigo extra.
--->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/raiz"
     android:layout_width="match_parent"
@@ -27,120 +16,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:baselineAligned="false"
-            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="@dimen/margen_pantalla">
 
-            <!-- Columna izquierda: los textos -->
-            <LinearLayout
-                android:id="@+id/tarjeta"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/texto_titulo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/fondo_tarjeta"
-                android:orientation="vertical"
-                android:padding="@dimen/margen_tarjeta">
+                android:layout_marginTop="@dimen/margen_titulo_superior"
+                android:gravity="center"
+                android:text="@string/titulo_principal"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/texto_titulo_sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/texto_titulo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/titulo_principal"
-                    android:textColor="@color/texto_titulo"
-                    android:textSize="@dimen/texto_titulo_sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/texto_subtitulo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:text="@string/subtitulo"
-                    android:textColor="@color/texto_normal"
-                    android:textSize="@dimen/texto_subtitulo_sp" />
-
-                <TextView
-                    android:id="@+id/texto_descripcion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_medio"
-                    android:lineSpacingMultiplier="1.2"
-                    android:text="@string/descripcion"
-                    android:textColor="@color/texto_normal"
-                    android:textSize="@dimen/texto_cuerpo_sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/espacio_medio"
-                    android:alpha="0.25"
-                    android:background="@color/azul_cielo" />
-
-                <TextView
-                    android:id="@+id/texto_idioma_actual"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_medio"
-                    android:text="@string/etiqueta_idioma_actual"
-                    android:textColor="@color/texto_resaltado"
-                    android:textSize="@dimen/texto_idioma_sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <!-- Hueco central: se deja vacio para no tapar al robot -->
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="0.6" />
-
-            <!-- Columna derecha: los botones de idioma, uno debajo de otro -->
-            <LinearLayout
-                android:id="@+id/tarjeta_botones"
-                android:layout_width="0dp"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/boton_entrar"
+                style="@style/Boton.Entrada"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/fondo_tarjeta"
-                android:orientation="vertical"
-                android:padding="@dimen/margen_tarjeta">
-
-                <TextView
-                    android:id="@+id/texto_seleccion_idioma"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/titulo_seleccion_idioma"
-                    android:textColor="@color/texto_normal"
-                    android:textSize="@dimen/texto_seccion_sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/boton_es"
-                    style="@style/Boton.Idioma"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:text="@string/boton_espanol" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/boton_en"
-                    style="@style/Boton.Idioma"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:text="@string/boton_ingles" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/boton_fr"
-                    style="@style/Boton.Idioma"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:text="@string/boton_frances" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/boton_de"
-                    style="@style/Boton.Idioma"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:text="@string/boton_aleman" />
-
-            </LinearLayout>
+                android:layout_marginTop="@dimen/espacio_boton_bienvenida"
+                android:text="@string/boton_entrar" />
 
         </LinearLayout>
 

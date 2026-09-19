@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    PANTALLA VERTICAL (retrato)
-
-    Estructura: fondo nine-patch a pantalla completa + una tarjeta blanca
-    semitransparente arriba con todo el contenido. Abajo queda libre, que es
-    donde el nine-patch mantiene fijo al robot de Android.
--->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/raiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     android:contentDescription="@string/descripcion_fondo">
 
-    <!-- Todo va dentro de un ScrollView para que en pantallas bajitas
-         (o con la letra del sistema muy grande) nada se corte. -->
     <ScrollView
         android:id="@+id/contenedor_scroll"
         android:layout_width="match_parent"
@@ -23,130 +13,33 @@
         android:clipToPadding="false"
         android:scrollbars="none">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="@dimen/margen_pantalla">
 
-            <!-- Tarjeta: se centra y nunca pasa de ancho_maximo_contenido,
-                 asi en tabletas el texto no se estira de borde a borde. -->
-            <LinearLayout
-                android:id="@+id/tarjeta"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/texto_titulo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fondo_tarjeta"
-                android:orientation="vertical"
-                android:padding="@dimen/margen_tarjeta"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_max="@dimen/ancho_maximo_contenido">
+                android:layout_marginTop="@dimen/margen_titulo_superior"
+                android:gravity="center"
+                android:text="@string/titulo_principal"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/texto_titulo_sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/texto_titulo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/titulo_principal"
-                    android:textColor="@color/texto_titulo"
-                    android:textSize="@dimen/texto_titulo_sp"
-                    android:textStyle="bold" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/boton_entrar"
+                style="@style/Boton.Entrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_boton_bienvenida"
+                android:text="@string/boton_entrar" />
 
-                <TextView
-                    android:id="@+id/texto_subtitulo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:text="@string/subtitulo"
-                    android:textColor="@color/texto_normal"
-                    android:textSize="@dimen/texto_subtitulo_sp" />
-
-                <TextView
-                    android:id="@+id/texto_descripcion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_medio"
-                    android:lineSpacingMultiplier="1.2"
-                    android:text="@string/descripcion"
-                    android:textColor="@color/texto_normal"
-                    android:textSize="@dimen/texto_cuerpo_sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/espacio_grande"
-                    android:background="@color/azul_cielo"
-                    android:alpha="0.25" />
-
-                <!-- Esta linea la actualiza MainActivity cada vez que se
-                     cambia de idioma. -->
-                <TextView
-                    android:id="@+id/texto_idioma_actual"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_medio"
-                    android:text="@string/etiqueta_idioma_actual"
-                    android:textColor="@color/texto_resaltado"
-                    android:textSize="@dimen/texto_idioma_sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/texto_seleccion_idioma"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_grande"
-                    android:text="@string/titulo_seleccion_idioma"
-                    android:textColor="@color/texto_normal"
-                    android:textSize="@dimen/texto_seccion_sp" />
-
-                <!-- Los cuatro botones en dos filas de dos: ocupan poco alto
-                     y se reparten el ancho con pesos, sin medidas fijas. -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/boton_es"
-                        style="@style/Boton.Idioma"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/boton_espanol" />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/boton_en"
-                        style="@style/Boton.Idioma"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="@dimen/espacio_pequeno"
-                        android:layout_weight="1"
-                        android:text="@string/boton_ingles" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/espacio_pequeno"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/boton_fr"
-                        style="@style/Boton.Idioma"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/boton_frances" />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/boton_de"
-                        style="@style/Boton.Idioma"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="@dimen/espacio_pequeno"
-                        android:layout_weight="1"
-                        android:text="@string/boton_aleman" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
     </ScrollView>
 

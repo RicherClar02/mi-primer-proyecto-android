@@ -14,6 +14,8 @@
     <dimen name="radio_tarjeta">20dp</dimen>
     <dimen name="radio_boton">14dp</dimen>
     <dimen name="altura_boton">50dp</dimen>
+     <dimen name="margen_titulo_superior">42dp</dimen>
+     <dimen name="espacio_boton_bienvenida">28dp</dimen>
 
     <!-- Ancho maximo del contenido: en pantallas muy anchas el texto
          no se estira de lado a lado, se queda legible y centrado. -->

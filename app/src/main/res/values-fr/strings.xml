@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Mon Premier Projet</string>
-    <string name="titulo_principal">Bonjour, le monde !</string>
+    <string name="titulo_principal">Bienvenue</string>
+    <string name="boton_entrar">Entrer</string>
     <string name="subtitulo">Mon premier projet Android</string>
     <string name="descripcion">Cette application est disponible en quatre langues et s’adapte à toutes les tailles d’écran et à toutes les orientations.</string>
     <string name="etiqueta_idioma_actual">Langue actuelle : %1$s</string>

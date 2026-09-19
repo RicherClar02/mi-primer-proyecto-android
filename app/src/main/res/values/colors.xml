@@ -5,6 +5,7 @@
     <color name="azul_cielo">#2196F3</color>
     <color name="azul_oscuro">#073042</color>
     <color name="verde_android">#3DDC84</color>
+    <color name="blanco">#FFFFFFFF</color>
 
     <!-- Tarjeta blanca semitransparente (E6 = 90 % de opacidad) -->
     <color name="tarjeta_fondo">#E6FFFFFF</color>

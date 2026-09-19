@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Mein Erstes Projekt</string>
-    <string name="titulo_principal">Hallo, Welt!</string>
+    <string name="titulo_principal">Willkommen</string>
+    <string name="boton_entrar">Betreten</string>
     <string name="subtitulo">Mein erstes Android-Projekt</string>
     <string name="descripcion">Diese Anwendung ist in vier Sprachen verfügbar und passt sich an jede Bildschirmgröße und Ausrichtung an.</string>
     <string name="etiqueta_idioma_actual">Aktuelle Sprache: %1$s</string>

@@ -14,6 +14,8 @@
     <dimen name="radio_tarjeta">28dp</dimen>
     <dimen name="radio_boton">18dp</dimen>
     <dimen name="altura_boton">60dp</dimen>
+    <dimen name="margen_titulo_superior">64dp</dimen>
+    <dimen name="espacio_boton_bienvenida">40dp</dimen>
 
     <dimen name="ancho_maximo_contenido">720dp</dimen>
 
